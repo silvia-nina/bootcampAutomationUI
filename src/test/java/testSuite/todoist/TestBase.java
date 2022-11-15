@@ -14,6 +14,8 @@ public class TestBase {
     ProjectPopUp projectPopUp = new ProjectPopUp();
     ProjectPage projectPage = new ProjectPage();
     DeletePopUp deletePopUp = new DeletePopUp();
+    TodayPage todayPage = new TodayPage();
+    TaskPopUp taskPopUp = new TaskPopUp();
     // todo property file
     String user= GetPropTodoist.getInstance().getUser();
     String password =GetPropTodoist.getInstance().getPwd();
