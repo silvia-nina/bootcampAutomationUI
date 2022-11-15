@@ -22,7 +22,7 @@ public class BasicSeleniumTest {
 
     @BeforeEach
     public void setup(){
-        System.setProperty("webdriver.chrome.driver","src/test/resources/driver/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","src/test/resources/driver/chromedriver");
         driver = new ChromeDriver();
         // implicit
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
@@ -59,7 +59,7 @@ public class BasicSeleniumTest {
                                     ,"ERROR login was incorrect");
 
         // create
-        String nameProject="Mojix"+new Date().getTime();
+        String nameProject="MojixSil"+new Date().getTime();
         driver.findElement(By.xpath("//td[text()='Add New Project']")).click();
         driver.findElement(By.id("NewProjNameInput")).sendKeys(nameProject);
         driver.findElement(By.id("NewProjNameButton")).click();
